@@ -3,7 +3,7 @@
 %{?nodejs_find_provides_and_requires}
 
 Name:           %{?scl_prefix}nodejs-osenv
-Version:        0.1.0
+Version:        0.1.3
 Release:        1%{?dist}
 Summary:        Look up environment settings specific to different operating systems
 BuildArch:      noarch
@@ -41,8 +41,14 @@ rm -rf %buildroot
 %doc LICENSE README.md
 
 %changelog
+* Mon Nov 30 2015 Tomas Hrcka <thrcka@redhat.com> - 0.1.3-1
+- New upstream release
+
 * Fri Jan 09 2015 Tomas Hrcka <thrcka@redhat.com> - 0.1.0-1
 - New upstream release
+
+* Fri Feb 28 2014 Tomas Hrcka <thrcka@redhat.com> - 0.0.3-6
+- rebuilt, bump release to fix rhbz#1070612
 
 * Thu Oct 17 2013 Tomas Hrcka <thrcka@redhat.com> - 0.0.3-5
 - replace provides and requires with macro
